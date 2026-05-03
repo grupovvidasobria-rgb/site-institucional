@@ -598,12 +598,49 @@ footer {
     fill: currentColor;
 }
 
+.footer-developed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: min(860px, calc(100% - 2rem));
+}
+
+.footer-developed span {
+    margin: 0;
+    line-height: 1.4;
+    color: #fff;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.footer-robycorp-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-robycorp-logo img {
+    display: block;
+    height: 140px;
+    width: auto;
+    max-width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     nav {
         justify-content: space-between;
         min-height: auto;
         padding: 1rem 1rem 0;
+    }
+
+    .footer-developed {
+        justify-content: center;
     }
 
     .logo {
@@ -675,6 +712,35 @@ footer {
     .contact iframe {
         height: 1000px;
         max-width: 100%;
+    }
+
+    .footer-developed {
+        max-width: 100%;
+        gap: 0.75rem;
+        padding: 0 0.75rem;
+    }
+
+    .footer-developed span {
+        font-size: 0.95rem;
+    }
+
+    .footer-robycorp-logo img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-developed {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .footer-developed span {
+        font-size: 0.85rem;
+    }
+
+    .footer-robycorp-logo img {
+        height: 80px;
     }
 }
 
